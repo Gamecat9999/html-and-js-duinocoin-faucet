@@ -8,8 +8,8 @@ class DuinoFaucet {
         
         // Initialize Supabase
         this.supabase = supabase.createClient(
-            'https://appriydjgfkvqlzdwmap.supabase.co',  // Replace with your project URL
-            'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImFwcHJpeWRqZ2ZrdnFsemR3bWFwIiwicm9sZSI6ImFub24iLCJpYXQiOjE3MzQ0ODEwNDQsImV4cCI6MjA1MDA1NzA0NH0.8IMYA4bvOtynP7MAAGPBsw0wl6VkwfbHVl0A40Fb0B8'  // Replace with your anon key
+            'ADD YOUR URL FOR YOUR SUPABASE PROJECT',  // Replace with your project URL
+            'ADD YOUR ANON KEY HERE'  // Replace with your anon key
         );
     }
 
