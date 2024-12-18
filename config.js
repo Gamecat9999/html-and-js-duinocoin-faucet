@@ -1,4 +1,4 @@
 const FAUCET_CONFIG = {
-    username: "katfaucet",
-    password: "Stayout1",
+    username: "DUINOCOIN USERNAME HERE",
+    password: "DUINOCOIN PASSWORD HERE",
 };
