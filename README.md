@@ -9,3 +9,5 @@ create table cooldowns (
 
 
 and then make sure to add your supabase project url and ANON key which you can find in project settings > api
+
+![image](https://github.com/user-attachments/assets/33c7ce5a-3b46-40af-8276-0308b8f1b711)
