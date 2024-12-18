@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KatFaucet</title>
+    <meta name="keywords" content="katfaucet, kat, Duinocoin, DUCO, Duinocoin faucet, crypto faucet, DUCO faucet">
+    <meta name="description" content="Get Free 0.01-5 free duinocoin once a day">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script src="config.js"></script>
+    <script src="faucet.js"></script>
+</head>
+<body>
+    <header>
+        <h1>KatFaucet 😻</h1>
+    </header>
+
+    <div class="container">
+        <div class="card">
+            <h2>Get 0.01-5 free Duinocoin!</h2>
+
+            <form id="faucetForm">
+                <div class="form-group">
+                    <label for="username">Enter your Duino-Coin username:</label>
+                    <input type="text" id="username" name="username" required>
+                </div>
+                <input type="submit" value="Claim DUCO">
+            </form>
+
+            <div id="message"></div>
+            
+            <div id="loading">
+                <div class="loading-spinner"></div>
+                Processing transaction...
+            </div>
+        </div>
+
+        <div id="faucetBalance">Loading balance...</div>
+
+        <a href="https://discord.gg/HUbHqUQUD2" class="discord-link">
+            Join our Discord Server!
+        </a>
+    </div>
+</body>
+</html>

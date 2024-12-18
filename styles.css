@@ -1,0 +1,218 @@
+:root {
+    --primary-color: #ffcc00;
+    --background-color: #1c1c1c;
+    --card-background: #2e2e2e;
+    --text-color: #f1f1f1;
+    --shadow-color: rgba(0, 0, 0, 0.3);
+    --error-bg: #442424;
+    --error-color: #ff9999;
+    --success-bg: #244424;
+    --success-color: #99ff99;
+    --discord-color: #7289da;
+    --discord-hover: #5f73bc;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    line-height: 1.6;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header {
+    width: 100%;
+    background-color: var(--primary-color);
+    padding: 2rem;
+    text-align: center;
+    box-shadow: 0 2px 10px var(--shadow-color);
+    margin-bottom: 2rem;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    color: var(--text-color);
+    margin: 0;
+}
+
+.container {
+    width: 90%;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+.card {
+    background-color: var(--card-background);
+    border-radius: 12px;
+    padding: 2rem;
+    box-shadow: 0 4px 6px var(--shadow-color);
+    margin-bottom: 2rem;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+    font-size: 1.5rem;
+}
+
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+}
+
+input[type="text"] {
+    width: 100%;
+    padding: 12px;
+    border: 2px solid var(--shadow-color);
+    border-radius: 8px;
+    font-size: 1rem;
+    background-color: var(--card-background);
+    color: var(--text-color);
+    transition: border-color 0.3s;
+}
+
+input[type="text"]:focus {
+    outline: none;
+    border-color: var(--primary-color);
+}
+
+button, input[type="submit"] {
+    width: 100%;
+    padding: 12px;
+    background-color: var(--primary-color);
+    color: var(--text-color);
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: transform 0.2s, opacity 0.2s;
+}
+
+button:hover, input[type="submit"]:hover {
+    transform: translateY(-2px);
+    opacity: 0.9;
+}
+
+button:disabled, input[type="submit"]:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+    transform: none;
+}
+
+#message {
+    padding: 1rem;
+    border-radius: 8px;
+    margin: 1rem 0;
+    text-align: center;
+    font-weight: 500;
+}
+
+#message.error {
+    background-color: var(--error-bg);
+    color: var(--error-color);
+}
+
+#message.success {
+    background-color: var(--success-bg);
+    color: var(--success-color);
+}
+
+#faucetBalance {
+    background-color: var(--card-background);
+    padding: 1rem;
+    border-radius: 8px;
+    text-align: center;
+    font-weight: 600;
+    margin: 1rem 0;
+    box-shadow: 0 2px 4px var(--shadow-color);
+}
+
+#loading {
+    display: none;
+    text-align: center;
+    margin: 1rem 0;
+    font-weight: 500;
+    color: var(--primary-color);
+}
+
+.discord-link {
+    display: inline-block;
+    padding: 12px 24px;
+    background-color: var(--discord-color);
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: 600;
+    margin: 2rem 0;
+    transition: transform 0.2s, background-color 0.3s;
+}
+
+.discord-link:hover {
+    background-color: var(--discord-hover);
+    transform: translateY(-2px);
+}
+
+.loading-spinner {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border: 3px solid var(--card-background);
+    border-radius: 50%;
+    border-top-color: var(--primary-color);
+    animation: spin 1s linear infinite;
+    margin-right: 8px;
+}
+
+@keyframes spin {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2rem;
+    }
+
+    .container {
+        width: 95%;
+    }
+
+    .card {
+        padding: 1.5rem;
+    }
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--background-color);
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--primary-color);
+    border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: var(--discord-hover);
+}
